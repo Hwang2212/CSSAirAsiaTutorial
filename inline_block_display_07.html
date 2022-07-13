@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline & Block Display</title>
+    <style>
+        /* Block and Inline Display */
+        /* There are 3 types of display */
+
+    li{
+        display: inline;
+    }
+    
+    li a{
+        text-decoration: none;
+        padding-right: 20px;
+    }
+
+    img {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .card{
+        display: inline-block;
+        background: thistle;
+        box-sizing: border-box;
+        border: violet 3px solid;
+        border-radius: 10px;
+        width: 33%;
+        padding-right: 10px;
+        margin: 20px auto; /* set auto for the machine to auto calculate */
+    }
+
+
+
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li><a href="#">Software Engineering</a></li>
+        <li><a href="#">Cyber Security</a></li>
+        <li><a href="#">Cloud Architect</a></li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <img src="./ship.jpg" alt="" width="300px" height="200px">
+    <img src="./ship.jpg" alt="" width="300px" height="200px">
+
+    <div class="card">
+        <h2>Header</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, molestiae.</p>
+    </div>
+    <div class="card">
+        <h2>Header</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, molestiae.</p>
+    </div>
+    <div class="card">
+        <h2>Header</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, molestiae.</p>
+    </div>
+</body>
+</html>

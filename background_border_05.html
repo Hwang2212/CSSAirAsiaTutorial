@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background & Border</title>
+    <style>
+        #home{
+            background-color: rgb(239,192,192);
+
+            border-color: rgb(234,89,28);
+            border-width: 3px;
+            border-style: double;
+
+            border: 2px blue dashed;
+            border: 4px coral solid;
+
+            border-radius: 15px; /* To make a curve rectangle */
+        }
+
+        #about{
+            background-color: #ffe4e1;
+            color: royalblue;
+            border-top: green 3px solid;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+
+        #contact{
+            background-image: url(./ship.jpg);
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+
+            background: url(./ship.jpg) no-repeat center center/cover;
+
+            width: 400px;
+            height: 300px;
+            color: seashell;
+        }
+    </style>
+</head>
+<body>
+    <div id="home">
+        <h2>Home</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consequatur quasi ut rem facilis dolorum perspiciatis quod. Quasi, dolorum dolore.</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, minus.</p>
+    </div>
+    <div id="contact">
+        <h2>Contact</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, ab.</p>
+    </div>
+
+</body>
+</html>
