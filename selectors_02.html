@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Selectors in CSS */
+        /* style with element name */
+        /* Use . to style with class */
+        /* Use # to style with id */
+
+
+        /* Style with element name */
+        body {
+            background-color: lightcoral;
+        }
+        /* Style with ID */
+        #main{
+            background-color: lightyellow;
+            border: 5px blue solid;
+        }
+
+        /* Style with class */
+        .header {
+            background-color: blueviolet;
+        }
+
+        /* Multielements */
+        #main , #topic {
+            border: 3px red solid;
+            padding: 10px;
+            margin: 3px;
+        }
+
+        /* Selecting Nested Elements */
+        #topic p{
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h2 class="header">Welcome to CSS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, error! Cupiditate 
+            quasi nulla ipsa asperiores vero perspiciatis reiciendis quisquam! Vel.</p>
+
+    </div>
+
+    <div id="topic">
+        <h2>Software engineering</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab eveniet 
+            necessitatibus nesciunt ipsum, corrupti suscipit doloremque explicabo quod dolore facere.</p>
+
+    </div>
+
+</body>
+</html>
