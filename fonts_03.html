@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <style>
+        /* Always check for web safe font RULE 1*/
+        /* HTML default font size: 16px */
+        /* 1px = 1.96 inch (Absolute)*/
+        /* rem: to the font size of the root element(html = 16px) */
+        /* em: to the font size of the parent element(relative) */
+        /* vw: 1% of the viewport width(Relative) */
+        /* vh: to 1% of the viewport height (Relative) */
+        /* %: to parent element(Relative) */
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+            line-height: 1.6rem;
+        }
+
+        #main p {
+            background-color: aquamarine;
+        }
+
+        #main p span {
+            background-color: beige;
+            color: blue;
+            font-size: 20px;
+            border: 2px red solid;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Welcome to Air Asia</h1>
+        <p>Lorem ipsum, dolor sit <span> amet 
+            consectetur adipisicing elit. </span> Quisquam, molestiae.</p>
+    </div>
+    <div id="software">
+        <h2>Software</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>
