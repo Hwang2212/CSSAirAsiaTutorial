@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4em;
+        }
+        /* How to Center the content (Container) on the page*/
+        /* Step 1: Wrap the content in a  div (Class or ID) */
+        /* Step 2: * use max width* width and set the margin */
+
+        /* margin auto sets the same amount to both sides 
+        and push the content to the center */
+
+        .main{
+            /* If we use width, it won't be mobile responsive */
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card{
+            background: lightgoldenrodyellow;
+            border: 2px chocolate solid;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card p{
+            /* How to allign the text (by default its align to the left) */
+            text-align: left;
+            text-align: right;
+            text-align: center;
+            /* It makes the text justify to the content
+            its gonna be even on the edges */
+            text-align: justify;
+        }
+
+        .card h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="home" class="card">
+            <h2>Software Engineering</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illum?</p>
+        </div>
+        <div id="about" class="card">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illum?</p>
+        </div>
+        <div id="contact" class="card">
+            <h2>Contact us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illum?</p>
+        </div>
+    </div>
+</body>
+</html>

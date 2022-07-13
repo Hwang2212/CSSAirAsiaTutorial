@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        /* Position values :
+        static: Not affected by (tblr) properties and values 
+        relative: affected by (tblr) properties and values 
+        sticky: its position based on the scroll bar
+        fix: its position based on the browser (viewport)
+        absolute: its position based on the parent element
+        (The Parent element should be position relative always)
+        */
+
+        body{
+            height: 5000px;
+            width: 5000px;
+        }
+        .card{
+            height: 200px;
+            width: 200px;
+        }
+
+        #card-1{
+            background-color: coral;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            z-index: 1; /* to move items back and forth */
+        }
+        .container{
+            position: relative;
+            width: 500px;
+            height:500px;
+            background:cornflowerblue;
+ 
+        }
+        #card-2{
+            position: absolute;
+            background-color: chartreuse;
+            top: 150px;
+            left: 100px;
+        }
+
+        #card-3{
+            position: absolute;
+            background-color: darkgreen;
+            bottom: 100px;
+            right: 50px;
+        }
+
+        #card-4{
+            position: fixed;
+            background-color: darkkhaki;
+        } /* Useful for button placement or chatbot */
+        
+        #card-5{
+            position: sticky;
+            background: violet;
+        }
+
+    </style>
+</head>
+<!-- Position: Static and fix an element even when scrolling up or down -->
+<body>
+    <div id="card-1" class="card"></div>
+
+    <div class="container">
+        <div id="card-2" class="card"></div>
+        <div id="card-3" class="card"></div>
+    </div>
+
+    <div id="card-4" class="card"></div>
+    <div id="card-5" class="card"></div>
+</body>
+</html>
